@@ -13,7 +13,7 @@ Asystent oferuje następujące funkcje sterowania głosowego:
 - **Zmiana głośności**: Dostosuj poziom głośności odtwarzania komendami "ustaw głośność", "zmniejsz głośność" czy "zwiększ głośność".
 - **Informacje o aktualnie odtwarzanym utworze**: Zapytaj o aktualnie odtwarzany utwór za pomocą "jak się nazywa", "jaka to piosenka" czy "podaj nazwę". Utwór zapiszę się w pliku piosenki.txt
 
-Wszystkie komendy oraz słowo aktywacyjne można dostosować do swoich potrzeb w pliku config.py
+Wszystkie komendy oraz słowo aktywacyjne można dostosować do swoich potrzeb w pliku `config.py`
 
 ## Jak używać asystenta na swoim komputerze
 
@@ -22,7 +22,7 @@ Wszystkie komendy oraz słowo aktywacyjne można dostosować do swoich potrzeb w
 Aby korzystać z asystenta, upewnij się, że spełnione są następujące wymagania:
 
 - Python 3.x zainstalowany na komputerze.
-- Zainstalowane bibliotek z pliku requirements.txt
+- Zainstalowane bibliotek z pliku `requirements.txt`
 - Konto Spotify oraz konfiguracja aplikacji na [Dashboardzie Deweloperskim Spotify](https://developer.spotify.com/dashboard/).
 
 ### Instalacja
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ### Konfiguracja
 
-1. Utwórz plik konfiguracyjny `credentials.py` i dodaj do niego swoje poświadczenia deweloperskie Spotify (Client ID i Client Secret).
+1. Utwórz plik  `credentials.py` i dodaj do niego swoje poświadczenia deweloperskie Spotify (Client ID i Client Secret).
 
 ```python
 client_id = 'twoje_client_id'
