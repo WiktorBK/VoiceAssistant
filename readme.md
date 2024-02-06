@@ -1,57 +1,47 @@
-# Voice Assistant for Spotify Control
+# Asystent Głosowy do Sterowania Spotify
 
-This voice assistant application is designed to interact with Spotify, allowing users to control playback through voice commands. It leverages Python's `speech_recognition` and `pyttsx3` libraries for speech recognition and text-to-speech capabilities, respectively, alongside a custom `SpotifyHandler` class to manage Spotify API interactions.
+Aplikacja asystenta głosowego umożliwia interakcję ze Spotify, pozwalając użytkownikom na kontrolę odtwarzania za pomocą poleceń głosowych. Wykorzystuje biblioteki `speech_recognition` i `pyttsx3` dla rozpoznawania mowy i syntezę mowy, oraz klasę `SpotifyHandler` do zarządzania interakcjami z API Spotify.
 
-## Features
+## Funkcjonalności
 
-The application supports a variety of voice commands to manage Spotify playback, including:
+Aplikacja obsługuje różnorodne polecenia głosowe do zarządzania odtwarzaniem w Spotify, w tym:
 
-- **Activation**: The assistant listens continuously for the activation word "spotify" before it starts processing further commands.
+- **Aktywacja**: Asystent nasłuchuje ciągle słowa aktywacyjnego "spotify", zanim zacznie przetwarzać dalsze polecenia.
 
-- **Playback Control**:
-  - **Resume Playback**: Say "wznów" or "włącz piosenkę" to resume or start playing music.
-  - **Stop Playback**: Say "stop", "zatrzymaj", or "wyłącz" to stop the music.
-  - **Skip Track**: Say "skip", "przewiń", or "pomiń" to skip to the next track.
+- **Kontrola Odtwarzania**:
+  - **Wznów Odtwarzanie**: Powiedz "wznów" lub "włącz piosenkę", aby wznowić lub rozpocząć odtwarzanie muzyki.
+  - **Zatrzymaj Odtwarzanie**: Powiedz "stop", "zatrzymaj" lub "wyłącz", aby zatrzymać muzykę.
+  - **Pomiń Utwór**: Powiedz "skip", "przewiń" lub "pomiń", aby przejść do następnego utworu.
 
-- **Volume Control**:
-  - To change the volume, include "ustaw głośność" followed by the desired volume level (0-100).
+- **Kontrola Głośności**:
+  - Aby zmienić głośność, powiedz "ustaw głośność" i podaj pożądany poziom głośności (0-100).
 
-- **Current Track Information**:
-  - Ask "podaj nazwę", "jaka to piosenka", or "jak się nazywa" to have the assistant announce the current track's name and artist.
+- **Informacje o Aktualnym Utworze**:
+  - Zapytaj "podaj nazwę", "jaka to piosenka" lub "jak się nazywa", aby asystent ogłosił nazwę aktualnego utworu i wykonawcę.
 
-- **Privacy Mode**:
-  - Say "nie podsłuchuj mnie" to turn off the assistant.
+- **Tryb Prywatności**:
+  - Powiedz "nie podsłuchuj mnie", aby wyłączyć asystenta.
 
-## Usage
+## Jak Zacząć
 
-1. Ensure the microphone is connected and configured correctly.
-2. Start the application. It will continuously listen for the activation word "spotify".
-3. Once activated, speak your command clearly. The assistant will confirm the action verbally using text-to-speech.
+1. Upewnij się, że mikrofon jest podłączony i prawidłowo skonfigurowany.
+2. Uruchom aplikację. Będzie ona ciągle nasłuchiwać słowa aktywacyjnego "spotify".
+3. Po aktywacji, wyraźnie wypowiedz swoje polecenie. Asystent potwierdzi akcję werbalnie za pomocą syntezatora mowy.
 
-## Technical Details
+## Szczegóły Techniczne
 
-- **Speech Recognition**: Uses the `speech_recognition` library to convert spoken words into text.
-- **Text-to-Speech**: Utilizes `pyttsx3` for verbal feedback to the user.
-- **Spotify Integration**: The `SpotifyHandler` class handles all interactions with the Spotify API, including playback control, volume adjustments, and retrieving current track information.
+- **Rozpoznawanie Mowy**: Wykorzystuje bibliotekę `speech_recognition` do konwersji wypowiedzianych słów na tekst.
+- **Synteza Mowy**: Używa `pyttsx3` do werbalnego informowania użytkownika o akcjach.
+- **Integracja ze Spotify**: Klasa `SpotifyHandler` zarządza wszystkimi interakcjami z API Spotify, w tym kontrolą odtwarzania, regulacją głośności i pobieraniem informacji o aktualnym utworze.
 
-## Requirements
+## Wymagania
 
 - Python 3.x
-- `speech_recognition`, `pyttsx3`, `pyaudio` libraries
-- A valid Spotify Developer account and API credentials for the `SpotifyHandler`.
+- Biblioteki `speech_recognition`, `pyttsx3`, `pyaudio`
+- Ważne konto deweloperskie Spotify i poświadczenia API dla `SpotifyHandler`.
 
-## Setup
+## Instalacja i Konfiguracja
 
-1. Install the required Python libraries using pip.
-2. Configure `SpotifyHandler` with your Spotify API credentials.
-3. Ensure your device's microphone is properly set up and recognized by your system.
-
-## Contributions
-
-Contributions to the voice assistant are welcome. Feel free to fork the repository, make improvements, and submit pull requests.
-
-## License
-
-[Specify the license here]
-
----
+1. Zainstaluj wymagane biblioteki Pythona za pomocą pip.
+2. Skonfiguruj `SpotifyHandler` z poświadczeniami API Spotify.
+3. Upewnij się, że mikrofon jest prawidłowo ustawiony i rozpoznawany przez system.
