@@ -1,5 +1,5 @@
 
-# Asystenta Głosowego Spotify
+# Asystent Głosowy Spotify
 
 Asystent głosowy Spotify to aplikacja zaprojektowana do sterowania odtwarzaczem Spotify za pomocą poleceń głosowych. Umożliwia użytkownikom łatwe zarządzanie odtwarzaniem muzyki, bez konieczności korzystania z interfejsu użytkownika Spotify.
 
@@ -22,7 +22,7 @@ Wszystkie komendy oraz słowo aktywacyjne można dostosować do swoich potrzeb w
 Aby korzystać z asystenta, upewnij się, że spełnione są następujące wymagania:
 
 - Python 3.x zainstalowany na komputerze.
-- Zainstalowane bibliotek z pliku `requirements.txt`
+- Zainstalowanie bibliotek z pliku `requirements.txt`
 - Konto Spotify oraz konfiguracja aplikacji na [Dashboardzie Deweloperskim Spotify](https://developer.spotify.com/dashboard/).
 
 ### Instalacja
